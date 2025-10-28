@@ -104,7 +104,7 @@ useEffect(()=>{
        {
         !loading&&rooms.owner.map((room)=>(
             // <Button className='bg-white text-black border-2 rounded-none cursor-pointer hover:text-white my-2 hover:bg-blue-500' key={room?.roomId}>{room?.roomId} </Button>
-            <Sidebaroptions key={room?.roomId} id={room?.roomId} href={`/doc/${room?.roomId}`} />
+            <Sidebaroptions key={room?.roomId} id={room?.roomId} href={`/docs/${room?.roomId}`} />
         ))
        }
        </div>

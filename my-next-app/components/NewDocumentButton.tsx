@@ -4,14 +4,17 @@ import React, { useTransition } from "react";
 import { Button } from "./ui/button";
 import { LogSessionClaims } from "@/actions/CreateNewDocument";
 import { useRouter } from "next/navigation";
-
+type SessionClaims = {
+  docId: string;
+};
 function NewDocumentButton() {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
 
   const handleCreateNewDocument = () => {
     startTransition(async () => {
-      LogSessionClaims();
+     const {docId}=await LogSessionClaims() as SessionClaims;
+      router.push(`/docs/${docId}`);
     
     });
   };
