@@ -41,5 +41,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-
-my-next-app/lubricunt-firebase-adminsdk-fbsvc-27cb116ac7.json
+lubricunt-firebase-adminsdk-fbsvc-27cb116ac7.json
